@@ -16,7 +16,13 @@
       "mcp__voice-tts__notify",
       "Bash(PYTHONPATH=/Users/smilerz/PycharmProjects/voice_ui/src python3 *)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(gh auth *)",
+      "Bash(git branch *)",
+      "Bash(git fetch *)"
     ]
   },
   "enableAllProjectMcpServers": true
