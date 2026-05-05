@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-ui"
+version = "0.1.0"
+description = "Claude Code 智能语音输出插件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "smilerz"}
+]
+keywords = ["claude", "tts", "voice", "terminal"]
+
+dependencies = [
+    "mcp>=1.20",
+    "edge-tts>=6.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "pytest-asyncio>=0.24",
+]
+edge-tts = ["edge-tts>=6.1"]
+pyttsx3 = ["pyttsx3>=2.90"]
+openai = ["openai>=1.0"]
+kokoro = ["kokoro>=0.1", "soundfile>=0.12", "numpy>=1.24"]
+all = [
+    "edge-tts>=6.1",
+    "pyttsx3>=2.90",
+    "openai>=1.0",
+    "kokoro>=0.1",
+    "soundfile>=0.12",
+    "numpy>=1.24",
+]
+
+[project.scripts]
+voice-tts-server = "voice_ui.mcp_server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"

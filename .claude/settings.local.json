@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(file *)",
+      "Bash(/Users/smilerz/PycharmProjects/voice_ui/.venv/bin/python *)",
+      "Bash(.venv/bin/pip install *)",
+      "Bash(.venv/bin/pytest *)",
+      "Bash(.venv/bin/python *)",
+      "Bash(.venv/bin/pip show *)",
+      "Bash(/Users/smilerz/PycharmProjects/voice_ui/.venv/bin/pip list *)",
+      "Bash(/Users/smilerz/PycharmProjects/voice_ui/.venv/bin/pip show *)",
+      "Bash(/Users/smilerz/PycharmProjects/voice_ui/.venv/bin/pip install *)",
+      "Skill(update-config)",
+      "mcp__voice-tts__speak",
+      "mcp__voice-tts__list_voices",
+      "mcp__voice-tts__notify",
+      "Bash(PYTHONPATH=/Users/smilerz/PycharmProjects/voice_ui/src python3 *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  },
+  "enableAllProjectMcpServers": true
+}

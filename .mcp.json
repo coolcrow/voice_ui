@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "voice-tts": {
+      "command": "/Users/smilerz/PycharmProjects/voice_ui/.venv/bin/python",
+      "args": ["-m", "voice_ui.mcp_server"]
+    }
+  }
+}

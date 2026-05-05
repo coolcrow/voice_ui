@@ -1,0 +1,4 @@
+# voice-ui 依赖
+# 当前仅使用 Python 标准库，无外部依赖
+
+# 开发依赖见 requirements-dev.txt 或 pyproject.toml [project.optional-dependencies]

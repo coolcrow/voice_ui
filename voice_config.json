@@ -1,0 +1,44 @@
+{
+  "comment": "Claude Code 语音输出配置",
+
+  "tts_engine": "edge-tts",
+  "fallback_engine": "system",
+  "speed": 0.8,
+  "voice": "",
+
+  "engines": {
+    "system": {
+      "enabled": true
+    },
+    "edge-tts": {
+      "enabled": true,
+      "default_voice": "zh-CN-XiaoxiaoNeural",
+      "default_rate": 180
+    },
+    "pyttsx3": {
+      "enabled": false,
+      "default_voice": "",
+      "default_rate": 180
+    },
+    "openai": {
+      "enabled": false,
+      "default_voice": "alloy",
+      "model": "tts-1"
+    },
+    "kokoro": {
+      "enabled": false,
+      "default_voice": "zf_xiaobei",
+      "lang_code": "z"
+    }
+  },
+
+  "synth": {
+    "enabled": true,
+    "volume": 0.3,
+    "boot": true,
+    "pre_speak": true,
+    "post_speak": true
+  },
+
+  "debug": false
+}
